@@ -29,7 +29,12 @@ public class Calculator {
         Scanner sc = new Scanner(System.in);
         String type = sc.nextLine();
 
+        // TODO оператор switch больше подходит для данной ситуации чем if-else if-else
         if ("i".equals(type)) {
+            // TODO Дублироваие кода
+            // TODO Возможно лучше было бы сделать отдельный метод и привести к виду
+            //  n1 = someMethod(par);
+            //  n2 = someMethod(par);
             System.out.println("Пожалуйста введите число:");
             System.out.println("");
                 AddNumber x = new AddNumber();
@@ -41,6 +46,10 @@ public class Calculator {
                 n2=y.AddNumber(i);
         }
         else if ("d".equals(type)) {
+            // TODO Дублироваие кода
+            // TODO Возможно лучше было бы сделать отдельный метод и привести к виду
+            //  n1 = someMethod(par);
+            //  n2 = someMethod(par);
             System.out.println("Пожалуйста введите число:");
             System.out.println("");
                 AddNumber x2 = new AddNumber();
@@ -52,6 +61,10 @@ public class Calculator {
                 n2 = y2.AddNumber(j);
         }
         else if ("l".equals(type)){
+            // TODO Дублироваие кода
+            // TODO Возможно лучше было бы сделать отдельный метод и привести к виду
+            //  n1 = someMethod(par);
+            //  n2 = someMethod(par);
             System.out.println("Пожалуйста введите число:");
             System.out.println("");
                 AddNumber x1 = new AddNumber();
@@ -74,6 +87,7 @@ public class Calculator {
         Scanner scr = new Scanner(System.in);
         String symbol = scr.nextLine();
 
+        // TODO Можно заменить на оператор switch
         if ("+".equals(symbol)) {
             Summ sm = new Summ();
         }
@@ -91,23 +105,30 @@ public class Calculator {
         }
     }
 
+    // TODO Я бы вынес данный класс в отдельный файл
     public class AddNumber {
 
         public  AddNumber() {
         }
 
+        // TODO Java Code Convention methods naming
+        // TODO В каких целях используется передача параметра?
         public int AddNumber(int i) {
             Scanner sc = new Scanner(System.in);
             int n = sc.nextInt();
                  return n;
         }
 
+        // TODO Java Code Convention methods naming
+        // TODO В каких целях используется передача параметра?
         public double AddNumber(double j) {
             Scanner sc = new Scanner(System.in);
             double n = sc.nextDouble();
                  return n;
         }
 
+        // TODO Java Code Convention methods naming
+        // TODO В каких целях используется передача параметра?
         public long AddNumber(long k) {
             Scanner sc = new Scanner(System.in);
             long n = sc.nextLong();
@@ -115,32 +136,46 @@ public class Calculator {
         }
     }
 
+    // TODO Я бы вынес данный класс в отдельный файл
     public class Summ {
 
+        // TODO Не очень хорошая идея производить вычесления прямо в конструкторе
         public Summ() {
             double sum = (n1 + n2);
             System.out.println("Результат --> " + sum);
         }
+
+        // TODO А где методы на int и long???
     }
 
+    // TODO Я бы вынес данный класс в отдельный файл
     public class Subtraction {
 
+        // TODO Не очень хорошая идея производить вычесления прямо в конструкторе
         public Subtraction() {
             double sub = (n1 - n2);
             System.out.println("Результат --> " + sub);
         }
+
+        // TODO А где методы на int и long???
     }
 
+    // TODO Я бы вынес данный класс в отдельный файл
     public class Multiplication {
 
+        // TODO Не очень хорошая идея производить вычесления прямо в конструкторе
         public Multiplication() {
             double mul = (n1 * n2);
             System.out.println("Результат --> " + mul);
         }
+
+        // TODO А где методы на int и long???
     }
 
+    // TODO Я бы вынес данный класс в отдельный файл
     public class Power {
 
+        // TODO Не очень хорошая идея производить вычесления прямо в конструкторе
         public Power() {
             double a = n1;
             for (int i = 1; i < n2; i++) {
@@ -151,10 +186,13 @@ public class Calculator {
         }
     }
 
+    // TODO Я бы вынес данный класс в отдельный файл
     public class Factorial {
 
         public Factorial() {
+            // TODO Не очень хорошая идея производить вычесления прямо в конструкторе
             if (n1 == 0) {
+                // TODO Можно было бы использовать n1++
                 System.out.println(n1+=1);
             } else {
                 int result = 1;
