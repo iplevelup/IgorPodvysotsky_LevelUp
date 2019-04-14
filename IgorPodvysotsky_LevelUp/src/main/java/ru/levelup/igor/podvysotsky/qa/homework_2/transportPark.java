@@ -8,6 +8,8 @@ import java.util.ArrayList;
         import java.util.Collections;
         import java.util.List;
 
+        // TODO Разбить на классы
+// TODO класс должен находиться в отдельном файле
 public interface transportPark {
 
     void printInfo();

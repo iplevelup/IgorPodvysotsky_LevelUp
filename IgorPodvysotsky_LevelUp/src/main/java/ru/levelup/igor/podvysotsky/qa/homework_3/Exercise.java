@@ -31,6 +31,7 @@ public class Exercise {
         System.out.println("");
         int n = Integer.parseInt(reader.readLine());
 
+        // TODO Должен быть предопределенный список имён из которого заполняется массив
         for (int i = 0 ; i<n; i++) {
             System.out.println("Введите название товара:");
             System.out.println("");
