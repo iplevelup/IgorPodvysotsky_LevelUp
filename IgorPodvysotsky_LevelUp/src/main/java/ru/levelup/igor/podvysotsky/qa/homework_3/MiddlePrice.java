@@ -5,6 +5,8 @@ class MiddlePrice {
     int n ;
     double sum;
 
+    // TODO Зачем данный класс???
+    // TODO Почему выичисление средней цены происходит в конструкторе???
     public MiddlePrice() {
         double s = 0.0;
         for (int i = 0; i < n; i++){

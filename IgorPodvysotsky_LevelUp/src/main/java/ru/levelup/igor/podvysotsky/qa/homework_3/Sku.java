@@ -4,6 +4,7 @@ package ru.levelup.igor.podvysotsky.qa.homework_3;
 public class Sku {
 
     private String name;
+    // todo почему цена static???
     private static double price;
 
     public Sku(String name) {
