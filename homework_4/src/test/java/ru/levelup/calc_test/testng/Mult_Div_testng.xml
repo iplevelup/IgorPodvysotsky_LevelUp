@@ -1,0 +1,8 @@
+<suite name="Mult_Div suie">
+    <test name = "My testing">
+        <classes>
+            <class name= "ru.levelup.calc_test.testng.CalcMultTestNg" />
+            <class name= "ru.levelup.calc_test.testng.CalcDivTestNg" />
+        </classes>>
+    </test>>
+</suite>

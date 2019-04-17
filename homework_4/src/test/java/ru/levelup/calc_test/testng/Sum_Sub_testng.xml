@@ -1,0 +1,8 @@
+<suite name="Sum_Sub suie">
+    <test name = "My testing">
+        <classes>
+            <class name= "ru.levelup.calc_test.testng.CalcSumTestNg" />
+            <class name= "ru.levelup.calc_test.testng.CalcSubTestNg" />
+        </classes>>
+    </test>>
+</suite>
