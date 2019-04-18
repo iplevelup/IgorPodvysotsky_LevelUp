@@ -6,7 +6,7 @@ import ru.levelup.qa.at.calculator.Calculator;
 
 import static org.testng.AssertJUnit.assertEquals;
 
-// TODO Класс Calculator не находится
+
 public class CalcSubTestJunit {
 
     private Calculator calc;
