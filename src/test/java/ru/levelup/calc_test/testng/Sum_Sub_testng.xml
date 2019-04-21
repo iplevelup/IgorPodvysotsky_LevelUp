@@ -1,5 +1,6 @@
 
 
+<!-- TODO xml файлы suites должны лежать в папке resources -->
 <suite name="Sum_Sub suie">
     <test name = "My testing">
         <classes>
