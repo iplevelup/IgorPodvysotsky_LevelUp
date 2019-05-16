@@ -17,7 +17,6 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-// TODO А где PageObjects?
 public class Mantisbt_test_PageObjects extends BaseTest {
 
     @Test

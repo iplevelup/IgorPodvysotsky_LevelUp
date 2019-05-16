@@ -1,6 +1,5 @@
 package hw6_package;
 
-// TODO Неиспользуемые импорты
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,8 +24,6 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
-    // TODO А почему метод protected?
-    // TODO Лучшу было бы использовать объект вместо 2-х параметров
     protected void login(final String username, final String password){
         //Enter login and password
         userNameTextField.sendKeys(username);

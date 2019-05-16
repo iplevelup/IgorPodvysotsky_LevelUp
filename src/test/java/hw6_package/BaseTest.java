@@ -35,7 +35,6 @@ public abstract class BaseTest {
     @BeforeMethod(alwaysRun = true)
 
     public void setUpTest() {
-        // TODO Для каких целей здесь второй раз создаётся драйвера?
         driver = new ChromeDriver(options);
 
         //Open page
