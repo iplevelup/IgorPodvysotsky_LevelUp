@@ -27,6 +27,7 @@ public class Mantisbt_test {
     @BeforeMethod
 
     public void setUpTest() {
+        // TODO А для каких целей пересоздаётся здесь драйвер
         driver = new ChromeDriver(options);
         //Open page
         driver.get("http://khda91.fvds.ru/mantisbt/");
@@ -60,35 +61,42 @@ public class Mantisbt_test {
 
         //Check "Create New Project" button exist
         assertEquals("Create New Project",
+                // TODO Автосгенерированный локатор!
                 driver.findElement(By.xpath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[1]/form/fieldset/button"))
                         .getText());
 
         //Click 'Create New Project' button
+        // TODO Автосгенерированный локатор!
         driver.findElement(By.xpath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[1]/form/fieldset/button")).click();
 
         //Check "Add Project" fields name exist
         //Project Name
         assertEquals("* Project Name",
+                // TODO Автосгенерированный локатор!
                 driver.findElement(By.xpath("//*[@id='manage-project-create-form']/div/div[2]/div/div/table/tbody/tr[1]/td[1]"))
                         .getText());
 
         //Status
         assertEquals("Status",
+                // TODO Автосгенерированный локатор!
                 driver.findElement(By.xpath("//*[@id='manage-project-create-form']/div/div[2]/div/div/table/tbody/tr[2]/td[1]"))
                         .getText());
 
         //Inherit Global Categories
         assertEquals("Inherit Global Categories",
+                // TODO Автосгенерированный локатор!
                 driver.findElement(By.xpath("//*[@id='manage-project-create-form']/div/div[2]/div/div/table/tbody/tr[3]/td[1]"))
                         .getText());
 
         //View Status
         assertEquals("View Status",
+                // TODO Автосгенерированный локатор!
                 driver.findElement(By.xpath("//*[@id='manage-project-create-form']/div/div[2]/div/div/table/tbody/tr[4]/td[1]"))
                         .getText());
 
         //Description
         assertEquals("Description",
+                // TODO Автосгенерированный локатор!
                 driver.findElement(By.xpath("//*[@id='manage-project-create-form']/div/div[2]/div/div/table/tbody/tr[5]/td[1]"))
                         .getText());
 
@@ -116,6 +124,7 @@ public class Mantisbt_test {
         driver.findElement(By.id("project-description")).sendKeys("Important and serious work");
 
         //Click "Add project" button
+        // TODO Автосгенерированный локатор!
         driver.findElement(By.xpath("//*[@id='manage-project-create-form']/div/div[3]/input"));
     }
 
@@ -136,50 +145,60 @@ public class Mantisbt_test {
 
         //Check "Create New Account" button exist
         assertEquals("Create New Account",
+                // TODO Автосгенерированный локатор!
                 driver.findElement(By.xpath("//*[@id='manage-user-div']/div[1]/a"))
                         .getText());
 
         //Click 'Create New Account' button
+        // TODO Автосгенерированный локатор!
         driver.findElement(By.xpath("//*[@id='manage-user-div']/div[1]/a")).click();
 
         //Check "Create New Account" fields name exist
         //Username
         assertEquals("Username",
+                // TODO Автосгенерированный локатор!
                 driver.findElement(By.xpath("//*[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[1]/td[1]"))
                         .getText());
 
         //Real Name
         assertEquals("Real Name",
+                // TODO Автосгенерированный локатор!
                 driver.findElement(By.xpath("//*[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[2]/td[1]"))
                         .getText());
 
         //E-mail
         assertEquals("E-mail",
+                // TODO Автосгенерированный локатор!
                 driver.findElement(By.xpath("//*[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[3]/td[1]"))
                         .getText());
 
         //Password
         assertEquals("Password",
+                // TODO Автосгенерированный локатор!
                 driver.findElement(By.xpath("//*[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[4]/td[1]"))
                         .getText());
 
         //Verify Password
         assertEquals("Verify Password",
+                // TODO Автосгенерированный локатор!
                 driver.findElement(By.xpath("//*[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[5]/td[1]"))
                         .getText());
 
         //Access Level
         assertEquals("Access Level",
+                // TODO Автосгенерированный локатор!
                 driver.findElement(By.xpath("//*[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[6]/td[1]"))
                         .getText());
 
         //Enabled
         assertEquals("Enabled",
+                // TODO Автосгенерированный локатор!
                 driver.findElement(By.xpath("//*[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[7]/td[1]"))
                         .getText());
 
         //Protected
         assertEquals("Protected",
+                // TODO Автосгенерированный локатор!
                 driver.findElement(By.xpath("//*[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[8]/td[1]"))
                         .getText());
 
@@ -205,18 +224,21 @@ public class Mantisbt_test {
         select.selectByValue("25");
 
         //Enabled
+        // TODO Автосгенерированный локатор!
         WebElement checkBox = driver.findElement(By.xpath("//*[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[7]/td[2]/label/span"));
         if (checkBox.isSelected()) {
             checkBox.click();
         }
 
         //Protected
+        // TODO Автосгенерированный локатор!
         WebElement checkBox2 = driver.findElement(By.xpath("//*[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[8]/td[2]/label/span"));
         if (checkBox2.isSelected()) {
             checkBox2.click();
         }
 
         //Click 'Create User' button
+        // TODO Автосгенерированный локатор!
         driver.findElement(By.xpath("//*[@id='manage-user-create-form']/div/div[3]/input")).click();
 
         //Logout
